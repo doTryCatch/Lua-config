@@ -79,7 +79,12 @@ On first launch, it will automatically install all required plugins.
 
 ## 📸 Screenshots
 
-_Add here if needed (optional)_
+![Screenshot (383)](https://github.com/user-attachments/assets/1dc0ae83-d329-4c1e-8b67-175f97215b8a)
+![Screenshot (384)](https://github.com/user-attachments/assets/ebf9defa-fed8-457e-9e9b-d75f890bc150)
+![Screenshot (385)](https://github.com/user-attachments/assets/6a6e3887-cf96-4d00-abfe-0bb3dfbe165a)
+![Screenshot (386)](https://github.com/user-attachments/assets/a0c8b94e-7f9e-44ec-9499-d6d05c34894b)
+![Screenshot (387)](https://github.com/user-attachments/assets/01c45507-8ac0-41d0-b4ac-0ec860c4d400)
+![Screenshot (388)](https://github.com/user-attachments/assets/21d65096-0baa-42ca-af99-ec48e2ad8d62)
 
 ---
 
