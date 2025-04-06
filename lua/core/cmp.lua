@@ -25,8 +25,11 @@ cmp.setup({
         }),
     }),
     sources    = cmp.config.sources({
+        {name='emmet_ls'},
         { name = 'nvim_lsp' },
-        { name = 'buffer' }
+        { name = 'buffer' },
+        {name='path'},
+        {name ='luasnip'},
 
     }),
     formatting = {

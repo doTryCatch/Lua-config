@@ -6,9 +6,11 @@ if not vim.loop.fs_stat(lazypath) then
         "clone",
         "--filter=blob:none",
         "https://github.com/folke/lazy.nvim.git",
+        jokjo
         lazypath,
     })
-end
+end require"cmp.utils.feedkeys".run(2)
+
 
 -- Prepend lazy.nvim to runtime path
 vim.opt.rtp:prepend(lazypath)

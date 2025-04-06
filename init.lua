@@ -1,6 +1,31 @@
 -- init.lua
+vim.opt.sessionoptions:append({ "curdir", "globals", "tabpages", "winsize", "resize", "buffers" })
 
--- Set leader key
+-- Close NvimTree before saving sessio0
+vim.cmd([[
+  command! Restart lua SaveAndRestart()
+]])
+-- Function to save session and restart
+function SaveAndRestart()
+
+-- Close NvimTree before saving session
+    local ok, _ = pcall(vim.cmd, "NvimTreeClose")
+    if not ok then
+        print("NvimTree is not loaded, skipping close.")
+end
+
+    
+    -- Save the session to a specific location
+    local session_file = vim.fn.expand('~/.local/share/nvim/session.vim') -- You can change the path here
+-- Save session (force overwrite)
+    vim.cmd('mksession! ' .. session_file)                              -- Save session
+
+    -- Call the restart shell script and exit Neovim
+    os.execute("~/.config/nvim/restart_nvim.sh") -- Executes the shell script
+
+    -- Exit Neovim
+    vim.cmd('qa') -- Quit all windows and exit Neovim
+end
 
 vim.g.mapleader = " "
 -- Ensure lazy.nvim is installed
@@ -45,6 +70,7 @@ require("core.treeSitter") -- Load Treesitter settings
 
 -- Load Interface Plugins
 require("core.gitsigns")
+require("core.mason")
 require("core.git")
 require("core.prettier")
 require("core.savePrettierChange")
