@@ -1,4 +1,4 @@
-Absolutely! Here's the clean and **pure Markdown version** of your `README.md` — everything is copy-paste friendly now:
+Gotcha! Here's the updated `README.md` with the **Neovim installation requirement** clearly mentioned before cloning:
 
 ---
 
@@ -30,7 +30,7 @@ Supports both **Linux** and **WSL**, and works great with GUIs like **Neovide** 
 
 Make sure you have the following installed:
 
-- Neovim v0.9+  
+- **Neovim v0.9+** — _must be installed before cloning this config_  
 - Git  
 - Curl or Wget  
 - Node.js (for Codeium and some plugins)  
@@ -100,6 +100,6 @@ This config is released under the **MIT License**.
 
 Happy Hacking 🚀
 
----
+--- 
 
-Let me know if you want to add emoji banners, Codeium usage steps, or plugin names with links!
+Let me know if you want me to also include Neovim install instructions for WSL/Linux!
